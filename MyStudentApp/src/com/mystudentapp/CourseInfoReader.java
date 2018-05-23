@@ -23,6 +23,7 @@ public class CourseInfoReader extends HttpServlet {
 		Statement stmt = null;
 		ResultSet rs = null;
 		StringBuffer sb = new StringBuffer("");
+		//Just git experiment try
 		try {
 			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			
