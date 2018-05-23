@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MyStudentApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!--  -->
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <jsp-file>/Login.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/logintomystudentapp</url-pattern>
+  </servlet-mapping>
+  
+  <!--  -->
+  <servlet>
+    <servlet-name>CourseInfo</servlet-name>
+    <jsp-file>/CourseInfo.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CourseInfo</servlet-name>
+    <url-pattern>/courseinfo</url-pattern>
+  </servlet-mapping>
+  
+  <!--  -->
+  <servlet>
+    <servlet-name>CourseInfoReader</servlet-name>
+    <servlet-class>com.mystudentapp.CourseInfoReader</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CourseInfoReader</servlet-name>
+    <url-pattern>/courseinforeader</url-pattern>
+  </servlet-mapping>
+  
+  <!--  -->
+  
+  <servlet>
+    <servlet-name>EducationType</servlet-name>
+    <jsp-file>/Education_type.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EducationType</servlet-name>
+    <url-pattern>/educationtype</url-pattern>
+  </servlet-mapping>
+  
+  <!--  -->
+  
+  <servlet>
+    <description></description>
+    <display-name>EducationTypeReader</display-name>
+    <servlet-name>EducationTypeReader</servlet-name>
+    <servlet-class>com.mystudentapp.EducationTypeReader</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EducationTypeReader</servlet-name>
+    <url-pattern>/educationtypereader</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!--  -->
+  
+  <servlet>
+    <servlet-name>GuardianInfo</servlet-name>
+    <jsp-file>/GuardianInfo.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GuardianInfo</servlet-name>
+    <url-pattern>/guardianinfo</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!--  -->
+  
+  <servlet>
+    <description></description>
+    <display-name>GuardianInfoReader</display-name>
+    <servlet-name>GuardianInfoReader</servlet-name>
+    <servlet-class>com.mystudentapp.GuardianInfoReader</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GuardianInfoReader</servlet-name>
+    <url-pattern>/guardianinforeader</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!--  -->
+  
+  <servlet>
+    <servlet-name>RequirementInfo</servlet-name>
+    <jsp-file>/RequirementInfo.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequirementInfo</servlet-name>
+    <url-pattern>/requirementinfo</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!--  -->
+  
+  <servlet>
+    <description></description>
+    <display-name>RequirementInfoReader</display-name>
+    <servlet-name>RequirementInfoReader</servlet-name>
+    <servlet-class>com.mystudentapp.RequirementInfoReader</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequirementInfoReader</servlet-name>
+    <url-pattern>/requirementinforeader</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <!--  -->
+  
+  <servlet>
+    <servlet-name>StudentAddressInfo</servlet-name>
+    <jsp-file>/StudentAddressInfo.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentAddressInfo</servlet-name>
+    <url-pattern>/studentaddressinfo</url-pattern>
+  </servlet-mapping>
+  
+  <!--  -->
+  
+  <servlet>
+    <description></description>
+    <display-name>StudentAddressInfoReader</display-name>
+    <servlet-name>StudentAddressInfoReader</servlet-name>
+    <servlet-class>com.mystudentapp.StudentAddressInfoReader</servlet-class>
+  </servlet>
+ 
+  
+  <!--  -->
+  <servlet>
+    <servlet-name>StudentCourseInfo</servlet-name>
+    <jsp-file>/StudentCourseInfo.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentCourseInfo</servlet-name>
+    <url-pattern>/studentcourseinfo</url-pattern>
+  </servlet-mapping>
+  
+  <!--  -->
+  
+  <servlet>
+    <description></description>
+    <display-name>StudentCourseInfoReader</display-name>
+    <servlet-name>StudentCourseInfoReader</servlet-name>
+    <servlet-class>com.mystudentapp.StudentCourseInfoReader</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentCourseInfoReader</servlet-name>
+    <url-pattern>/studentcourseinforeader</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!--  -->
+  <servlet>
+    <servlet-name>StudentEducationInfo</servlet-name>
+    <jsp-file>/StudentEducationInfo.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentEducationInfo</servlet-name>
+    <url-pattern>/studenteducationinfo</url-pattern>
+  </servlet-mapping>
+  
+  <!--  -->
+  
+  <servlet>
+    <description></description>
+    <display-name>StudentEducationInfoReader</display-name>
+    <servlet-name>StudentEducationInfoReader</servlet-name>
+    <servlet-class>com.mystudentapp.StudentEducationInfoReader</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentEducationInfoReader</servlet-name>
+    <url-pattern>/studenteducationinforeader</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!--  -->
+  <servlet>
+    <servlet-name>StudentInfo</servlet-name>
+    <jsp-file>/StudentInfo.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentInfo</servlet-name>
+    <url-pattern>/studentinfo</url-pattern>
+  </servlet-mapping>
+  
+  <!--  -->
+  
+  <servlet>
+    <description></description>
+    <display-name>StudentInfoReader</display-name>
+    <servlet-name>StudentInfoReader</servlet-name>
+    <servlet-class>com.mystudentapp.StudentInfoReader</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentInfoReader</servlet-name>
+    <url-pattern>/studentinforeader</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!--  -->
+  
+   <servlet>
+    <description></description>
+    <display-name>StudentInterviewInfo</display-name>
+    <servlet-name>StudentInterviewInfo</servlet-name>
+    <jsp-file>/StudentInterviewInfo.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentInterviewInfo</servlet-name>
+    <url-pattern>/studentinterviewinfo</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>StudentInterviewInfoReader</display-name>
+    <servlet-name>StudentInterviewInfoReader</servlet-name>
+    <servlet-class>com.mystudentapp.StudentInterviewInfoReader</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentInterviewInfoReader</servlet-name>
+    <url-pattern>/studentinterviewinforeader</url-pattern>
+  </servlet-mapping>
+ 
+ 
+ 
+ <!--  -->
+  
+   <servlet>
+    <description></description>
+    <display-name>StudentOtherInfo</display-name>
+    <servlet-name>StudentOtherInfo</servlet-name>
+    <jsp-file>/StudentOtherInfo.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentInterviewInfo</servlet-name>
+    <url-pattern>/studentotherinfo</url-pattern>
+  </servlet-mapping>
+  
+  <!--  -->
+  
+  <servlet>
+    <description></description>
+    <display-name>StudentOtherInfoReader</display-name>
+    <servlet-name>StudentOtherInfoReader</servlet-name>
+    <servlet-class>com.mystudentapp.StudentOtherInfoReader</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentOtherInfoReader</servlet-name>
+    <url-pattern>/studentotherinforeader</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Home JSP -->
+  <servlet>
+  	<servlet-name>Home</servlet-name>
+  	<jsp-file>/Home.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Home</servlet-name>
+  	<url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+   <!-- Create Profile JSP -->
+  <servlet>
+  	<servlet-name>CreateProfile</servlet-name>
+  	<jsp-file>/CreateProfile.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CreateProfile</servlet-name>
+  	<url-pattern>/createprofile</url-pattern>
+  </servlet-mapping>
+</web-app>
