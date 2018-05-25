@@ -7,11 +7,17 @@
 <title>Login page</title>
 </head>
 <body>
+<fieldset>
+<legend>Login Page</legend>
+<form action="./loginvalidation" method="post">
 <table>
-<tr><td>User Id:</td><td><input type = "number" placeholder = "enter user id"></td></tr>
-<tr><td>Password:</td><td><input type = "password" placeholder = "enter valid password"></td></tr>
-<tr><td><input type="submit" value="Submit"></td></tr>
+<tr><td>RegNo </td><td><input type = "number" name="regno" placeholder = "Enter registration number "></td></tr>
+<tr><td>Password</td><td><input type = "password" name="password" placeholder = "Enter valid password"></td></tr>
 </table>
-
+<input type="reset" value="Reset">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" value="Login">
+</form>
+</fieldset>
 </body>
 </html>

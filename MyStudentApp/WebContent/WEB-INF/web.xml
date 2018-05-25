@@ -12,12 +12,33 @@
   
   <!--  -->
   <servlet>
+    <servlet-name>Header</servlet-name>
+    <jsp-file>/Header.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Header</servlet-name>
+    <url-pattern>/header</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- Login JSP  -->
+  <servlet>
     <servlet-name>Login</servlet-name>
     <jsp-file>/Login.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
     <servlet-name>Login</servlet-name>
     <url-pattern>/logintomystudentapp</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Login Validation  -->
+  <servlet>
+    <servlet-name>LoginValidation</servlet-name>
+    <servlet-class>com.mystudentapp.LoginValidation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginValidation</servlet-name>
+    <url-pattern>/loginvalidation</url-pattern>
   </servlet-mapping>
   
   <!--  -->
@@ -283,4 +304,69 @@
   	<servlet-name>CreateProfile</servlet-name>
   	<url-pattern>/createprofile</url-pattern>
   </servlet-mapping>
+  
+   <!-- Student Search JSP -->
+   <servlet>
+   	<servlet-name>StudentSearch</servlet-name>
+   	<jsp-file>/StudentSearch.jsp</jsp-file>
+   </servlet>
+   <servlet-mapping>
+   	<servlet-name>StudentSearch</servlet-name>
+   	<url-pattern>/studentsearch</url-pattern>
+   </servlet-mapping>
+   
+    <!-- Student Search Reader -->
+   <servlet>
+   	<servlet-name>StudentSearchReader</servlet-name>
+   	<servlet-class>com.mystudentapp.StudentSearchReader</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   	<servlet-name>StudentSearchReader</servlet-name>
+   	<url-pattern>/studentsearchreader</url-pattern>
+   </servlet-mapping>
+   
+   
+    <!-- Change Password JSP -->
+   <servlet>
+   	<servlet-name>ChangePassword</servlet-name>
+   	<jsp-file>/ChangePassword.jsp</jsp-file>
+   </servlet>
+   <servlet-mapping>
+   	<servlet-name>ChangePassword</servlet-name>
+   	<url-pattern>/changepassword</url-pattern>
+   </servlet-mapping>
+   
+    <!-- Change Password Reader -->
+   <servlet>
+   	<servlet-name>ChangePasswordReader</servlet-name>
+   	<servlet-class>com.mystudentapp.ChangePasswordReader</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   	<servlet-name>ChangePasswordReader</servlet-name>
+   	<url-pattern>/changepasswordreader</url-pattern>
+   </servlet-mapping>
+   
+   
+    <!-- Keyword Search JSP -->
+   <servlet>
+   	<servlet-name>KeywordSearch</servlet-name>
+   	<jsp-file>/KeywordSearch.jsp</jsp-file>
+   </servlet>
+   <servlet-mapping>
+   	<servlet-name>KeywordSearch</servlet-name>
+   	<url-pattern>/keywordsearch</url-pattern>
+   </servlet-mapping>
+   
+    <!-- Keyword  Reader -->
+   <servlet>
+    <description></description>
+    <display-name>KeywordReader</display-name>
+    <servlet-name>KeywordReader</servlet-name>
+    <servlet-class>com.mystudentapp.KeywordReader</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>KeywordReader</servlet-name>
+    <url-pattern>/keywordreader</url-pattern>
+  </servlet-mapping>
+   
 </web-app>
